@@ -1,0 +1,40 @@
+** using leaflet sources: https://react-leaflet.js.org/
+    * first you should install leaflet :
+        npm install leaflet
+        npm install react-leaflet
+        npm install -D @types/leaflet
+
+** How to solve "window is not defined" errors in React and Next.js :
+    Next.js is a React framework with pre-rendering abilities. This means that for every page, Next.js will try to generate the HTML of the page for better SEO and performance.
+    This is why, if you're trying to do this:
+    // components/Scroll.js
+    window.addEventListener("scroll", function() {
+      console.log("scroll!")
+    });
+    Then it will fail with "ReferenceError: window is not defined"
+    Because in the Node.js world, window is not defined, window is only available in browsers.
+    There are three ways to solve that:
+        1. First solution: typeof
+        2. Second solution: the useEffect hook
+        3. Third solution: dynamic loading  --> best solution I tested for leaflet issue I'd say!!
+        Suppose you created a Map component using leaflet library
+        In pages/index.js where wish import the map, just add:
+            const Map = dynamic(
+              () => {
+                return import("../components/Map");
+              },
+              { ssr: false }
+            );
+        Then in the index.js return() part just call  <Map /> as usual component!
+        Works!!!
+    source:https://dev.to/vvo/how-to-solve-window-is-not-defined-errors-in-react-and-next-js-5f97
+
+** don't forget to include the leaflet css file :
+    you can wether add leaflet.css in public and link it in index.js    or copy leaflet documentation external link to css
+** lastly, add a .leaflet-container{ width:100%; height:100%} in your own project style
+    source: https://www.youtube.com/watch?v=62Y8SFi2wBk
+
+
+** not recommended to add stylesheet  directly in index.js :(
+    instead create a _document.js in pages folder.
+    source : https://nextjs.org/docs/advanced-features/custom-document

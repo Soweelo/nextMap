@@ -1,0 +1,48 @@
+.container{
+    width: 100%;
+    /*min-height: 80vh;*/
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+
+}
+.title{
+    padding: 1rem;
+    color: #0078a8;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation: bounce 2s  alternate infinite ;
+
+}
+@keyframes bounce{
+    0% {
+
+        transform: translateY(-4px);
+    }
+    25% {
+        opacity: 1;
+        transform: translateY(6px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(-6px);
+    }
+    60% {
+        transform: translateY(5px);
+    }
+    80% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(4px);
+    }
+}
+.mapWrapper{
+    overflow-x: hidden;
+    width: 100vw;
+    /*height: 100vh;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

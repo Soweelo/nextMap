@@ -1,0 +1,29 @@
+.container {
+  min-height: 400px;
+  background-color: #1F2E38ff;
+  display: flex;
+  color: aliceblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.items{
+  width: max(350px, 25%);
+  padding: 1rem;
+  color: darkgray;
+  display: flex;
+  justify-content: center;
+}
+
+
+@media screen and (max-width: 480px) {
+  .container {
+    height: auto;
+    text-align: center;
+
+  }
+
+
+}
