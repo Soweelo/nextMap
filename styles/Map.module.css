@@ -15,6 +15,23 @@
     animation: bounce 2s  alternate infinite ;
 
 }
+.elecPopupWrapper{
+    display: flex;
+
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.elecPopupLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.elecPopupImg{
+
+}
 @keyframes bounce{
     0% {
 
