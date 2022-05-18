@@ -3,6 +3,9 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 import dynamic from "next/dynamic";
+import Quizz from "../components/Quizz";
+import { useState } from "react";
+import Modal from "../components/Modal";
 
 const Map = dynamic(
   () => {
@@ -11,6 +14,7 @@ const Map = dynamic(
   { ssr: false }
 );
 export default function Home() {
+  const [showModal, setShowModal] = useState(false);
   return (
     <div className={styles.container}>
       <Head>
@@ -19,7 +23,9 @@ export default function Home() {
         <link rel="icon" href="images/light-bulb_icon_small.png" />
       </Head>
       <div className={styles.container}>
-        <Map />
+        <Map setShowModal={setShowModal} showModal={showModal} />
+
+        <Modal showModal={showModal} setShowModal={setShowModal} />
       </div>
     </div>
   );

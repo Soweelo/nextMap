@@ -12,6 +12,7 @@ export default function _document() {
           rel="stylesheet"
         />
         <link rel="stylesheet" href="leaflet.css" crossOrigin="" />
+        <link rel="stylesheet" href="global.css" crossOrigin="" />
       </Head>
       <body>
         <Main />

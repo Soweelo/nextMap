@@ -5,6 +5,7 @@
     /*justify-content: center;*/
     align-items: center;
     flex-direction: column;
+    z-index: 0;
 
 }
 .title{
@@ -28,6 +29,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 .elecPopupImg{
 
@@ -57,7 +59,7 @@
 }
 .mapWrapper{
     overflow-x: hidden;
-    width: 100vw;
+    max-width: 100vw;
     /*height: 100vh;*/
     display: flex;
     justify-content: center;

@@ -14,6 +14,7 @@ import {
 import L, { latLngBounds, Icon } from "leaflet";
 import { useRef, useMemo } from "react";
 import DraggableMarker from "./DraggableMarker";
+import Link from "next/link";
 const lightBulb = new Icon({
   iconUrl: "images/light-bulb_icon_small.png",
   iconSize: [70, 70],
@@ -22,7 +23,7 @@ const stockage = new Icon({
   iconUrl: "images/stockage_icon.png",
   iconSize: [70, 70],
 });
-const Map = () => {
+const Map = ({ setShowModal, showModal }) => {
   // Variables
   const mapSW = [0, 4096],
     mapNE = [4096, 0];
@@ -43,6 +44,10 @@ const Map = () => {
   //   }),
   //   [map]
   // );
+  const handleClick = (e) => {
+    e.preventDefault();
+    setShowModal(true);
+  };
   return (
     <div className={styles.container}>
       <div className={styles.title}>
@@ -77,10 +82,9 @@ const Map = () => {
                     <div className={styles.elecPopupWrapper}>
                       <b>Point du réseau électrique</b>
                       <br />
-                      <a
-                        href="https://nosgestesclimat.fr/"
-                        target="_blank"
+                      <div
                         className={styles.elecPopupLink}
+                        onClick={handleClick}
                       >
                         Tester mon empreinte sur le climat
                         <Image
@@ -91,20 +95,18 @@ const Map = () => {
                           objectFit="contain"
                           className={styles.elecPopupImg}
                         />
-                      </a>
+                      </div>
                     </div>
                   </Popup>
                 </Marker>
                 <Marker position={[-35, 56]} icon={lightBulb}>
                   <Popup width={90}>
-                    {" "}
                     <div className={styles.elecPopupWrapper}>
                       <b>Point du réseau électrique</b>
                       <br />
-                      <a
-                        href="https://nosgestesclimat.fr/"
-                        target="_blank"
+                      <div
                         className={styles.elecPopupLink}
+                        onClick={handleClick}
                       >
                         Tester mon empreinte sur le climat
                         <Image
@@ -115,7 +117,7 @@ const Map = () => {
                           objectFit="contain"
                           className={styles.elecPopupImg}
                         />
-                      </a>
+                      </div>
                     </div>
                   </Popup>
                 </Marker>
@@ -125,10 +127,9 @@ const Map = () => {
                     <div className={styles.elecPopupWrapper}>
                       <b>Point du réseau électrique</b>
                       <br />
-                      <a
-                        href="https://nosgestesclimat.fr/"
-                        target="_blank"
+                      <div
                         className={styles.elecPopupLink}
+                        onClick={handleClick}
                       >
                         Tester mon empreinte sur le climat
                         <Image
@@ -139,7 +140,7 @@ const Map = () => {
                           objectFit="contain"
                           className={styles.elecPopupImg}
                         />
-                      </a>
+                      </div>
                     </div>
                   </Popup>
                 </Marker>

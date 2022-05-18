@@ -1,0 +1,14 @@
+.container{
+    width: 100%;
+    height: 100%;
+}
+.testWrapper{
+    width: min(700px,80vw);
+    padding: 1rem;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+.loaderWrapper{
+    width: 100%;
+    display: flex;justify-content: center;
+}
