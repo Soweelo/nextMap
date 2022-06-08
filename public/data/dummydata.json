@@ -1,0 +1,302 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" }
+  },
+  "tilesMaps": {
+    "landscapeMap": {
+      "id": "landscapeMap",
+      "mapUrl": "maps/landscape/{z}/{x}/{y}.png",
+      "attribution": "",
+      "subdomains": "",
+      "minZoom": "1",
+      "maxZoom": "4",
+      "crs": true,
+      "maxBounds": [
+        [-76, -180],
+        [76, 180]
+      ],
+      "center": [0, 0],
+      "dataSimple": null,
+      "dataLayers": [
+        {
+          "layerId": "consumeFeatures",
+          "layerName": "Réseau électrique",
+          "data": [
+            {
+              "type": "consumeFeatures",
+              "properties": {
+                "ID": 1,
+                "NAME": "Point du réseau éléctrique",
+                "DESCRIPTIO": " Tester mon empreinte sur le climat id 1",
+                "PICTURE__1": "nosgestesclimat.png"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-32, -115]
+              }
+            },
+            {
+              "type": "consumeFeatures",
+              "properties": {
+                "ID": 2,
+                "NAME": "Point du réseau éléctrique",
+                "DESCRIPTIO": " Tester mon empreinte sur le climat id 2",
+                "PICTURE__1": "nosgestesclimat.png"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-35, 56]
+              }
+            },
+            {
+              "type": "consumeFeatures",
+              "properties": {
+                "ID": 3,
+                "NAME": "Point du réseau éléctrique",
+                "DESCRIPTIO": " Tester mon empreinte sur le climat id 3",
+                "PICTURE__1": "nosgestesclimat.png"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [27, -52]
+              }
+            }
+          ]
+        },
+        {
+          "layerId": "stockageFeatures",
+          "layerName": "Réseau de stockage",
+          "data": [
+            {
+              "type": "stockageFeatures",
+              "properties": {
+                "ID": 100,
+                "NAME": "Point du réseau de stockage",
+                "DESCRIPTIO": "",
+                "PICTURE__1": null
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [2, -135]
+              }
+            },
+            {
+              "type": "stockageFeatures",
+              "properties": {
+                "ID": 101,
+                "NAME": "Point du réseau de stockage",
+                "": "",
+                "PICTURE__1": null
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-2, 130]
+              }
+            },
+            {
+              "type": "stockageFeatures",
+              "properties": {
+                "ID": 102,
+                "NAME": "Point du réseau de stockage",
+                "DESCRIPTIO": "",
+                "PICTURE__1": null
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [61, -119]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "watercolorMap": {
+      "id": "watercolorMap",
+      "mapUrl": "https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg",
+      "attribution": "Map tiles by <a href=\"http://stamen.com\">Stamen Design</a>, <a href=\"http://creativecommons.org/licenses/by/3.0\">CC BY 3.0</a> &mdash; Map data &copy; <a href=\"https://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors",
+      "subdomains": "abcd",
+      "minZoom": "1",
+      "maxZoom": "16",
+      "crs": false,
+      "maxBounds": null,
+      "center": [0, 0],
+      "dataSimple": null,
+      "dataLayers": [
+        {
+          "layerId": "consumeFeatures",
+          "layerName": "Réseau électrique",
+          "data": [
+            {
+              "type": "consumeFeatures",
+              "properties": {
+                "ID": 1,
+                "NAME": "Point du réseau éléctrique",
+                "DESCRIPTIO": " Tester mon empreinte sur le climat id 1",
+                "PICTURE__1": "nosgestesclimat.png"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-32, -115]
+              }
+            },
+            {
+              "type": "consumeFeatures",
+              "properties": {
+                "ID": 2,
+                "NAME": "Point du réseau éléctrique",
+                "DESCRIPTIO": " Tester mon empreinte sur le climat id 2",
+                "PICTURE__1": "nosgestesclimat.png"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-35, 56]
+              }
+            },
+            {
+              "type": "consumeFeatures",
+              "properties": {
+                "ID": 3,
+                "NAME": "Point du réseau éléctrique",
+                "DESCRIPTIO": " Tester mon empreinte sur le climat id 3",
+                "PICTURE__1": "nosgestesclimat.png"
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [27, -52]
+              }
+            }
+          ]
+        },
+        {
+          "layerId": "stockageFeatures",
+          "layerName": "Réseau de stockage",
+          "data": [
+            {
+              "type": "stockageFeatures",
+              "properties": {
+                "ID": 100,
+                "NAME": "Point du réseau de stockage",
+                "DESCRIPTIO": "",
+                "PICTURE__1": null
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [2, -135]
+              }
+            },
+            {
+              "type": "stockageFeatures",
+              "properties": {
+                "ID": 101,
+                "NAME": "Point du réseau de stockage",
+                "": "",
+                "PICTURE__1": null
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [-2, 130]
+              }
+            },
+            {
+              "type": "stockageFeatures",
+              "properties": {
+                "ID": 102,
+                "NAME": "Point du réseau de stockage",
+                "DESCRIPTIO": "",
+                "PICTURE__1": null
+              },
+              "geometry": {
+                "type": "Point",
+                "coordinates": [61, -119]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "consumeFeatures": [
+    {
+      "type": "consumeFeatures",
+      "properties": {
+        "ID": 1,
+        "NAME": "Point du réseau éléctrique",
+        "DESCRIPTIO": " Tester mon empreinte sur le climat id 1",
+        "PICTURE__1": "nosgestesclimat.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-32, -115]
+      }
+    },
+    {
+      "type": "consumeFeatures",
+      "properties": {
+        "ID": 2,
+        "NAME": "Point du réseau éléctrique",
+        "DESCRIPTIO": " Tester mon empreinte sur le climat id 2",
+        "PICTURE__1": "nosgestesclimat.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-35, 56]
+      }
+    },
+    {
+      "type": "consumeFeatures",
+      "properties": {
+        "ID": 3,
+        "NAME": "Point du réseau éléctrique",
+        "DESCRIPTIO": " Tester mon empreinte sur le climat id 3",
+        "PICTURE__1": "nosgestesclimat.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [27, -52]
+      }
+    }
+  ],
+  "stockageFeatures": [
+    {
+      "type": "stockageFeatures",
+      "properties": {
+        "ID": 100,
+        "NAME": "Point du réseau de stockage",
+        "DESCRIPTIO": "",
+        "PICTURE__1": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [2, -135]
+      }
+    },
+    {
+      "type": "stockageFeatures",
+      "properties": {
+        "ID": 101,
+        "NAME": "Point du réseau de stockage",
+        "": "",
+        "PICTURE__1": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-2, 130]
+      }
+    },
+    {
+      "type": "stockageFeatures",
+      "properties": {
+        "ID": 102,
+        "NAME": "Point du réseau de stockage",
+        "DESCRIPTIO": "",
+        "PICTURE__1": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [61, -119]
+      }
+    }
+  ]
+}
