@@ -30,7 +30,7 @@
     source:https://dev.to/vvo/how-to-solve-window-is-not-defined-errors-in-react-and-next-js-5f97
 
 ** don't forget to include the leaflet css file :
-    you can wether add leaflet.css in public and link it in index.js    or copy leaflet documentation external link to css
+    you can either add leaflet.css in public and link it in index.js    or copy leaflet documentation external link to css
 ** lastly, add a .leaflet-container{ width:100%; height:100%} in your own project style
     source: https://www.youtube.com/watch?v=62Y8SFi2wBk
 
@@ -56,7 +56,18 @@
 
         export default Home
 
+*** React Leaflet: Custom event "onClick" for Marker component:
+    * onClick doesn't work anymore in react-leaflet v3
+    * useMapEvent(s) applies to the map instance, not to UI components like Marker. To register an event handler on a Marker, you need to use the eventHandlers prop:
+       ex:  <Marker
+              data="customdata"
+              position={position}
+              icon={locationIcon}
+              eventHandlers={{ click: onClick }}
+            >
+            </Marker>
 
-
-
-
+*** Deployment for next
+    * in package.json to "build" command the export one:  "build": "next build && next export"  https://nextjs.org/docs/advanced-features/static-html-export
+    * run npm run build
+    * now you got an "out" file with all you can push on server

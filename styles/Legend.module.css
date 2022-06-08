@@ -1,0 +1,144 @@
+.container {
+  width: 250px;
+  height: 100%;
+  background-color: aliceblue;
+  position: absolute;
+  z-index: 100;
+transition: all 1s ease-in;
+  padding: 1rem;
+  opacity: 0.9;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+.list {
+  height: min(90%, 400px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+    position: relative;
+    text-shadow: 1px 1px 2px #a2a2a2;
+}
+.list::after{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    top: 0;
+    right: 50%;
+    background-color: #0078a8;
+    opacity: 0.3;
+    border-radius: 30% ;
+}
+.listitem {
+  cursor: pointer;
+  color: #0078a8;
+    text-align: center;
+    position: relative;
+    padding: 1rem;
+}
+.listitem::after{
+    content: " ";
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    bottom: 2px;
+    right: 47%;
+    background-color: #0078a8;
+    opacity: 0.7;
+    box-shadow: 1px 1px 3px grey;
+    transition:  all 0.1s ease-in-out;
+}
+.listitem:hover::after{
+    transform: scale(1.1);
+    background-color: #1F2E38ff;
+    /*border: 1px solid #0078a8;*/
+    opacity: 1;
+}
+.controlIconContainer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 15px;
+  cursor: pointer;
+}
+.controlIconWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  border-radius: 50%;
+  border: 2px solid #0078a8;
+  width: 35px;
+  height: 35px;
+    padding: 3px;
+}
+.controlIconWrapper::after, .controlIconWrapper::before{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    content: "";
+    border: 1px solid rgba(0, 120, 168, 0.71);
+    border-radius: 50%;
+  right: -3px;
+}
+.controlIconWrapper::before {
+    animation: move 3s linear infinite;
+}
+
+.controlIconWrapper::after {
+    animation: move 3s linear infinite;
+    animation-delay: 1s;
+}
+@keyframes move {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    0% {
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.5);
+        opacity: 0;
+    }
+}
+.controlIconItem{
+  width: 2px;
+  height: 16px;
+  display: block;
+  position: relative;
+  background-color: #0078a8;
+    transition:  transform 1s ease-in;
+    transform-origin: center;
+    margin-left: 10px;
+}
+
+.controlIconItem.opened:nth-child(1) {
+  transform: rotate(45deg) translateY(3px) ;
+
+}
+.controlIconItem.opened:nth-child(2) {
+  transform: rotate(-45deg) translateY(-3px) ;
+
+}
+.controlIconItem.closed:nth-child(1) {
+    transform: rotate(-45deg) translateY(3px);
+
+}
+.controlIconItem.closed:nth-child(2) {
+    transform: rotate(45deg) translateY(-3px);
+
+}

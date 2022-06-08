@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd2e4b53-d6a7-44a1-8d0c-cafb2d99cb36" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/components/Modal.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Quizz.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/iframeObserver.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/functions/moveIframe.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hooks/useTrait.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/Modal.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/Quizz.module.css" afterDir="false" />
+    <list default="true" id="fd2e4b53-d6a7-44a1-8d0c-cafb2d99cb36" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/Legend.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/context/MapContext.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/styles/Legend.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/DraggableMarker.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/DraggableMarker.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Map.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Map.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Modal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Modal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Navbar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Navbar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_document.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/leaflet.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/leaflet.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/Map.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Map.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/Modal.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/Modal.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/the dev's logbook.txt" beforeDir="false" afterPath="$PROJECT_DIR$/the dev's logbook.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,7 +73,13 @@
       <workItem from="1652344534458" duration="28628000" />
       <workItem from="1652446772044" duration="3963000" />
       <workItem from="1652705640721" duration="9460000" />
-      <workItem from="1652768697973" duration="25320000" />
+      <workItem from="1652768697973" duration="58931000" />
+      <workItem from="1653031638470" duration="2646000" />
+      <workItem from="1653316650735" duration="562000" />
+      <workItem from="1653466459320" duration="6179000" />
+      <workItem from="1654235667437" duration="2601000" />
+      <workItem from="1654249327053" duration="1310000" />
+      <workItem from="1654672786933" duration="14221000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <created>1652374608840</created>
@@ -84,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652374608840</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Api test in modal&#10;Manage iframe big displaying trouble 😼 by creating personal function:&#10; - execute only when modal is mounted&#10; - create an observer to see when iframe is addedNode to body in DOM and disconnect&#10; &#10; Added opening modal in Map light bulb popup">
+      <created>1652856403307</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652856403307</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,7 +103,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Api test in modal&#10;Manage iframe big displaying trouble  by creating personal function:&#10; - execute only when modal is mounted&#10; - create an observer to see when iframe is addedNode to body in DOM and disconnect&#10; &#10; Added opening modal in Map light bulb popup" />
+    <option name="LAST_COMMIT_MESSAGE" value="Api test in modal&#10;Manage iframe big displaying trouble  by creating personal function:&#10; - execute only when modal is mounted&#10; - create an observer to see when iframe is addedNode to body in DOM and disconnect&#10; &#10; Added opening modal in Map light bulb popup" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,7 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
-
+import * as mapData from "../public/data/dummydata.json";
 import dynamic from "next/dynamic";
 import Quizz from "../components/Quizz";
 import { useState } from "react";
@@ -15,6 +14,10 @@ const Map = dynamic(
 );
 export default function Home() {
   const [showModal, setShowModal] = useState(false);
+  const [mapUrl, setMapUrl] = useState(mapData.tilesMaps.landscapeMap.mapUrl);
+
+  const [mapId, setMapId] = useState("landscapeMap");
+  // const [mapId, setMapId] = useState("watercolorMap");
   return (
     <div className={styles.container}>
       <Head>
@@ -23,7 +26,14 @@ export default function Home() {
         <link rel="icon" href="images/light-bulb_icon_small.png" />
       </Head>
       <div className={styles.container}>
-        <Map setShowModal={setShowModal} showModal={showModal} />
+        <Map
+          setShowModal={setShowModal}
+          showModal={showModal}
+          mapUrl={mapUrl}
+          setMapUrl={setMapUrl}
+          mapId={mapId}
+          setMapId={setMapId}
+        />
 
         <Modal showModal={showModal} setShowModal={setShowModal} />
       </div>

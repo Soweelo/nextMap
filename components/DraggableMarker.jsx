@@ -29,7 +29,7 @@ const DraggableMarker = () => {
       ref={markerRef}
     >
       <Popup minWidth={90} position={position}>
-        <span>"Marker is draggable"</span>
+        <span> &quot;Marker is draggable &quot;</span>
         <br />
         <span>
           Position:
